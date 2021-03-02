@@ -1,7 +1,7 @@
 // Libraries
 import React, {useContext} from 'react';
 import PropTypes from 'prop-types';
-import {Card, Image, Button, Label, Icon, Popup} from 'semantic-ui-react';
+import {Card, Image, Button} from 'semantic-ui-react';
 import moment from 'moment';
 import {Link} from 'react-router-dom';
 
@@ -15,7 +15,7 @@ import CustomPopup from '../CustomPopup';
 
 const PostCard = (props) => {
     // NOTE: Props
-    const {post: {body, createdAt, id, username, likeCount, commentCount, likes, comments} = {}} = props;
+    const {post: {body, createdAt, id, username, likeCount, commentCount, likes} = {}} = props;
     const {user} = useContext(AuthContext);
 
     return (

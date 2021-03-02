@@ -13,7 +13,7 @@ import './assets/styles/index.scss';
 import './App.css';
 
 // React context
-import {AuthContext, AuthProvider} from './context/auth';
+import {AuthProvider} from './context/auth';
 
 // Components
 import MenuBar from './components/MenuBar';

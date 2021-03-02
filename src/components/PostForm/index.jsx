@@ -21,7 +21,7 @@ const PostForm = () => {
         body: ''
     });
     
-    const [createPost, {error}] = useMutation(CREATE_POST, {
+    const [createPost] = useMutation(CREATE_POST, {
         variables: values,
         update(proxy, result) {
             const data = proxy.readQuery({query: FETCH_POSTS_QUERY}) || {};
